@@ -4,10 +4,7 @@ const userRating = document.querySelector('.rating')
 const buttonScore = document.getElementById('button-score')
 
 
-submitRating.addEventListener('click', function submission() {
-    thankYouSection.style.display ='block'
-}
-)
+
 
 buttonScore.addEventListener("click", function (e) {
 
@@ -15,5 +12,9 @@ buttonScore.addEventListener("click", function (e) {
         const buttonValue = e.target.textContent
         userRating.textContent = `You have rated us ${buttonValue} stars out of 5`
     }
+    submitRating.addEventListener('click', function submission() {
+    thankYouSection.style.display ='block'
+}
+)
 
 })
